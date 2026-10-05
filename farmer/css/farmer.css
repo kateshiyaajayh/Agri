@@ -25,6 +25,11 @@ h6,
   flex-shrink: 0;
 }
 
+.farmer-brand-logo {
+  max-width: 100%;
+  height: auto;
+}
+
 .nav-link {
   color: #555;
   border-radius: 8px;
@@ -53,8 +58,27 @@ footer {
   position: absolute;
   top: 48px;
   left: 0;
-  width: 250px;
+  width: min(250px, calc(100vw - 2rem));
   z-index: 1000;
+  max-height: calc(100vh - 6rem);
+  overflow-y: auto;
+}
+
+header details > summary {
+  list-style: none;
+}
+
+header details > summary::-webkit-details-marker {
+  display: none;
+}
+
+main {
+  min-width: 0;
+}
+
+main img,
+main canvas {
+  max-width: 100%;
 }
 .table th {
   color: #6c757d;

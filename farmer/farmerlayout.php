@@ -26,7 +26,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
         <aside class="farmer-sidebar d-none d-lg-block bg-white border-end p-3">
 
             <div class="mb-4">
-                <img src="../images/logo.png" width="150">
+                <img src="../images/logo.png" width="150" alt="SmartDairy" class="farmer-brand-logo">
             </div>
 
             <nav class="nav flex-column gap-1">
@@ -100,7 +100,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             <!-- Header -->
             <header class="bg-white border-bottom px-3 px-md-4 py-3">
 
-                <div class="d-flex align-items-center justify-content-between">
+                <div class="farmer-header-inner d-flex align-items-center justify-content-between gap-2">
 
                     <div class="d-flex align-items-center gap-3">
 

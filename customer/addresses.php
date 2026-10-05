@@ -60,7 +60,7 @@ ob_start();
                     <!-- Home Address -->
                     <div class="address-card selected">
 
-                        <div class="d-flex justify-content-between gap-3">
+                        <div class="d-flex flex-column flex-sm-row justify-content-between gap-3">
 
                             <div class="d-flex gap-3">
 
@@ -103,7 +103,7 @@ ob_start();
                             </div>
 
 
-                            <div class="address-actions">
+                            <div class="address-actions d-flex gap-3 align-self-end align-self-sm-start">
 
                                 <a href="#" title="Edit">
                                     <i class="bi bi-pencil"></i>
@@ -123,7 +123,7 @@ ob_start();
                     <!-- Other Address -->
                     <div class="address-card">
 
-                        <div class="d-flex justify-content-between gap-3">
+                        <div class="d-flex flex-column flex-sm-row justify-content-between gap-3">
 
                             <div class="d-flex gap-3">
 
@@ -158,7 +158,7 @@ ob_start();
                             </div>
 
 
-                            <div class="address-actions">
+                            <div class="address-actions d-flex gap-3 align-self-end align-self-sm-start">
 
                                 <a href="#" title="Edit">
                                     <i class="bi bi-pencil"></i>

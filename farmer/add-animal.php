@@ -87,7 +87,7 @@ ob_start();
                         Gender
                     </label>
 
-                    <div class="d-flex gap-4 pt-2">
+                    <div class="d-flex flex-wrap gap-4 pt-2">
 
                         <div class="form-check">
                             <input class="form-check-input"

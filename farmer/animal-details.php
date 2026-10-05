@@ -221,8 +221,8 @@ ob_start();
 
     <div class="card-body p-3 p-md-4">
 
-        <div class="d-flex justify-content-between
-                    align-items-center mb-4">
+        <div class="d-flex flex-column flex-sm-row justify-content-between
+                    align-items-start align-items-sm-center gap-2 mb-4">
 
             <h5 class="fw-bold mb-0">
                 Health Summary
@@ -299,8 +299,8 @@ ob_start();
 
     <div class="card-body p-3 p-md-4">
 
-        <div class="d-flex justify-content-between
-                    align-items-center mb-4">
+        <div class="d-flex flex-column flex-sm-row justify-content-between
+                    align-items-start align-items-sm-center gap-2 mb-4">
 
             <h5 class="fw-bold mb-0">
                 Milk Production

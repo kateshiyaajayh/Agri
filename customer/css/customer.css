@@ -75,6 +75,15 @@ h6,
 footer {
   min-height: 55px;
 }
+
+main {
+  min-width: 0;
+}
+
+main img,
+main canvas {
+  max-width: 100%;
+}
 /* marketplace */
 .market-header {
   margin-bottom: 30px;
@@ -204,12 +213,6 @@ footer {
   color: #dc3545;
 }
 /* cart */
-.cart-item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
 .cart-product-image {
   width: 90px;
   height: 90px;
@@ -223,17 +226,6 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.cart-product-info {
-  flex-grow: 1;
-}
-
-.cart-product-price {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 12px;
 }
 
 .quantity-box {
@@ -275,12 +267,6 @@ footer {
   margin-top: 5px;
 }
 
-.checkout-product {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-}
 /* order */
 .order-card {
   border: 1px solid #e9ecef;
@@ -291,24 +277,6 @@ footer {
 
 .order-card:last-child {
   margin-bottom: 0;
-}
-
-.order-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-}
-
-.order-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 25px;
-}
-
-.order-products {
-  flex-grow: 1;
 }
 
 .order-product {
@@ -335,11 +303,6 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.order-summary {
-  min-width: 130px;
-  text-align: right;
 }
 
 .status-badge {
@@ -443,11 +406,6 @@ footer {
   justify-content: center;
   flex-shrink: 0;
   font-size: 18px;
-}
-
-.address-actions {
-  display: flex;
-  gap: 12px;
 }
 
 .address-actions a {

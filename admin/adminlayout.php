@@ -25,7 +25,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <div class="d-flex min-vh-100">
 
         <!-- Sidebar -->
-        <aside class="admin-sidebar bg-white border-end p-3">
+        <aside class="admin-sidebar d-none d-lg-block bg-white border-end p-3">
 
             <div class="mb-4">
                 <a href="dashboard.php" class="text-decoration-none">
@@ -114,11 +114,11 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             <!-- Header -->
             <header class="bg-white border-bottom px-3 px-md-4 py-3">
 
-                <div class="d-flex align-items-center justify-content-between">
+                <div class="admin-header-inner d-flex align-items-center justify-content-between gap-2">
 
                     <div class="d-flex align-items-center gap-3">
 
-                        <details class="d-md-none position-relative">
+                        <details class="d-lg-none position-relative">
                             <summary class="btn btn-light">
                                 <i class="bi bi-list"></i>
                             </summary>
@@ -170,7 +170,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
                         <div>
                             <h5 class="mb-0 fw-semibold"><?= $pageTitle ?></h5>
-                            <small class="text-muted">
+                            <small class="admin-header-description text-muted">
                                 Manage your SmartDairyPro system
                             </small>
                         </div>

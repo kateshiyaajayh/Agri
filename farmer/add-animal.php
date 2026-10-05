@@ -29,7 +29,7 @@ ob_start();
 
     <div class="card-body p-3 p-md-4">
 
-        <form>
+        <form novalidate>
 
             <div class="row g-3">
 
@@ -40,7 +40,10 @@ ob_start();
 
                     <input type="text"
                         class="form-control"
+                        name="animal_id"
+                        data-validation="required"
                         placeholder="Enter animal ID">
+                    <span class="error text-danger" id="animal_idError"></span>
                 </div>
 
 
@@ -49,7 +52,9 @@ ob_start();
                         Animal Type
                     </label>
 
-                    <select class="form-select">
+                    <select class="form-select"
+                        name="animal_type"
+                        data-validation="required">
                         <option selected disabled>
                             Select animal type
                         </option>
@@ -58,6 +63,7 @@ ob_start();
                         <option>Goat</option>
                         <option>Other</option>
                     </select>
+                    <span class="error text-danger" id="animal_typeError"></span>
                 </div>
 
 
@@ -68,7 +74,10 @@ ob_start();
 
                     <input type="text"
                         class="form-control"
+                        name="breed"
+                        data-validation="required"
                         placeholder="Enter breed">
+                    <span class="error text-danger" id="breedError"></span>
                 </div>
 
 
@@ -84,7 +93,8 @@ ob_start();
                             <input class="form-check-input"
                                 type="radio"
                                 name="gender"
-                                id="female">
+                                id="female"
+                                data-validation="required">
 
                             <label class="form-check-label"
                                 for="female">
@@ -96,7 +106,8 @@ ob_start();
                             <input class="form-check-input"
                                 type="radio"
                                 name="gender"
-                                id="male">
+                                id="male"
+                                data-validation="required">
 
                             <label class="form-check-label"
                                 for="male">
@@ -105,6 +116,7 @@ ob_start();
                         </div>
 
                     </div>
+                    <span class="error text-danger" id="genderError"></span>
 
                 </div>
 
@@ -115,7 +127,10 @@ ob_start();
                     </label>
 
                     <input type="date"
-                        class="form-control">
+                        class="form-control"
+                        name="date_of_birth"
+                        data-validation="required">
+                    <span class="error text-danger" id="date_of_birthError"></span>
                 </div>
 
 
@@ -126,7 +141,10 @@ ob_start();
 
                     <input type="text"
                         class="form-control"
+                        name="age"
+                        data-validation="required"
                         placeholder="e.g. 4 Years">
+                    <span class="error text-danger" id="ageError"></span>
                 </div>
 
 
@@ -140,6 +158,8 @@ ob_start();
 
                         <input type="number"
                             class="form-control"
+                            name="weight"
+                            data-validation="required numeric"
                             placeholder="Enter weight">
 
                         <span class="input-group-text">
@@ -147,6 +167,7 @@ ob_start();
                         </span>
 
                     </div>
+                    <span class="error text-danger" id="weightError"></span>
 
                 </div>
 
@@ -157,7 +178,10 @@ ob_start();
                     </label>
 
                     <input type="date"
-                        class="form-control">
+                        class="form-control"
+                        name="purchase_date"
+                        data-validation="required">
+                    <span class="error text-danger" id="purchase_dateError"></span>
                 </div>
 
 
@@ -169,7 +193,12 @@ ob_start();
 
                     <input type="file"
                         class="form-control"
+                        name="animal_photo"
+                        data-validation="required file filesize"
+                        data-filetypes="jpg,jpeg,png,webp"
+                        data-filesize="2048"
                         accept="image/*">
+                    <span class="error text-danger" id="animal_photoError"></span>
 
                     <small class="text-muted">
                         JPG, PNG or WEBP

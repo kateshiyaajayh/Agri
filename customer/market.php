@@ -138,7 +138,7 @@ ob_start();
                         <i class="bi bi-heart"></i>
                     </button>
 
-                    <img src="../images/milk.jpg"
+                    <img src="../images/cow-milk.jpg"
                         alt="Fresh Cow Milk">
 
                 </div>
@@ -210,7 +210,7 @@ ob_start();
                         <i class="bi bi-heart"></i>
                     </button>
 
-                    <img src="../images/curd.jpg"
+                    <img src="../images/cow-milk.jpg"
                         alt="Fresh Curd">
 
                 </div>
@@ -282,7 +282,7 @@ ob_start();
                         <i class="bi bi-heart"></i>
                     </button>
 
-                    <img src="../images/paneer.jpg"
+                    <img src="../images/buffalo-milk.jpg"
                         alt="Fresh Paneer">
 
                 </div>
@@ -354,7 +354,7 @@ ob_start();
                         <i class="bi bi-heart"></i>
                     </button>
 
-                    <img src="../images/ghee.jpg"
+                    <img src="../images/cow-ghee.jpg"
                         alt="Pure Cow Ghee">
 
                 </div>
@@ -490,7 +490,7 @@ ob_start();
                         <i class="bi bi-heart"></i>
                     </button>
 
-                    <img src="../images/butter.jpg"
+                    <img src="../images/buffalo-ghee.jpg"
                         alt="Fresh Butter">
 
                 </div>
@@ -562,7 +562,7 @@ ob_start();
                         <i class="bi bi-heart"></i>
                     </button>
 
-                    <img src="../images/milk.jpg"
+                    <img src="../images/cow-milk.jpg"
                         alt="Full Cream Milk">
 
                 </div>
@@ -634,7 +634,7 @@ ob_start();
                         <i class="bi bi-heart"></i>
                     </button>
 
-                    <img src="../images/curd.jpg"
+                    <img src="../images/cow-milk.jpg"
                         alt="Premium Curd">
 
                 </div>

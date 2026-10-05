@@ -1,28 +1,7 @@
 $(document).ready(function () {
-  /*
-  Validation rules and their meanings:
-    required: Field must not be empty.
-    email: Field must be a valid email address.
-    strongPassword: Password must be at least 8 characters, include uppercase, lowercase, number, and special character.
-    min: Field must have a minimum length (specified by data-min attribute).
-    data-min: Minimum characters (used with min validation).
-    max: Field must have a maximum length (specified by data-max attribute).
-    data-max: Maximum characters (used with max validation).
-    confirmPassword: Field must match the password field (specified by data-password-id attribute).
-    data-password-id: ID of the password field to match (used with confirmPassword validation).
-    terms: Field must be checked (for terms and conditions).
-    alpha: Field must only contain letters.
-    numeric: Field must only contain numbers.
-    file: Field must be a valid file.
-    data-filesize: Maximum file size in KB (used with file validation).
-    data-filetypes: Allowed file types (used with file validation separated by commas).
-    data-min-items: Minimum number of checkboxes that must be selected (used with checkbox groups).
-    data-max-items: Maximum number of checkboxes that can be selected (used with checkbox groups).
-  */
-
   function validateField(input) {
     let field = $(input);
-    let value = field.val().trim();
+    let value = (field.val() ?? "").toString().trim();
 
     let errorSpan = $("#" + field.attr("name") + "Error");
     let validationType = field.data("validation") || "";

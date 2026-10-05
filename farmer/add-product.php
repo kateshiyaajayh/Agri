@@ -29,7 +29,7 @@ ob_start();
 
     <div class="card-body p-3 p-md-4">
 
-        <form>
+        <form novalidate>
 
             <div class="row g-3">
 
@@ -42,7 +42,10 @@ ob_start();
 
                     <input type="text"
                         class="form-control"
+                        name="product_name"
+                        data-validation="required"
                         placeholder="Enter product name">
+                    <span class="error text-danger" id="product_nameError"></span>
 
                 </div>
 
@@ -54,7 +57,9 @@ ob_start();
                         Category
                     </label>
 
-                    <select class="form-select">
+                    <select class="form-select"
+                        name="category"
+                        data-validation="required">
 
                         <option selected disabled>
                             Select category
@@ -67,6 +72,7 @@ ob_start();
                         <option>Curd</option>
 
                     </select>
+                    <span class="error text-danger" id="categoryError"></span>
 
                 </div>
 
@@ -86,9 +92,12 @@ ob_start();
 
                         <input type="number"
                             class="form-control"
+                            name="price"
+                            data-validation="required numeric"
                             placeholder="Enter price">
 
                     </div>
+                    <span class="error text-danger" id="priceError"></span>
 
                 </div>
 
@@ -100,7 +109,9 @@ ob_start();
                         Unit
                     </label>
 
-                    <select class="form-select">
+                    <select class="form-select"
+                        name="unit"
+                        data-validation="required">
 
                         <option selected disabled>
                             Select unit
@@ -112,6 +123,7 @@ ob_start();
                         <option>Piece</option>
 
                     </select>
+                    <span class="error text-danger" id="unitError"></span>
 
                 </div>
 
@@ -125,7 +137,10 @@ ob_start();
 
                     <input type="number"
                         class="form-control"
+                        name="stock_quantity"
+                        data-validation="required numeric"
                         placeholder="Enter stock quantity">
+                    <span class="error text-danger" id="stock_quantityError"></span>
 
                 </div>
 
@@ -139,7 +154,12 @@ ob_start();
 
                     <input type="file"
                         class="form-control"
+                        name="product_photo"
+                        data-validation="required file filesize"
+                        data-filetypes="jpg,jpeg,png,webp"
+                        data-filesize="2048"
                         accept="image/*">
+                    <span class="error text-danger" id="product_photoError"></span>
 
                     <small class="text-muted">
                         JPG, PNG or WEBP
@@ -156,8 +176,11 @@ ob_start();
                     </label>
 
                     <textarea class="form-control"
+                        name="description"
+                        data-validation="required"
                         rows="4"
                         placeholder="Enter product description"></textarea>
+                    <span class="error text-danger" id="descriptionError"></span>
 
                 </div>
 

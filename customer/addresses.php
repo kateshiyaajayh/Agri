@@ -201,6 +201,7 @@ ob_start();
                     </div>
 
 
+                    <form action="addresses.php" method="post" novalidate>
                     <div class="row g-3">
 
                         <div class="col-12">
@@ -217,6 +218,7 @@ ob_start();
                                         type="radio"
                                         name="addressType"
                                         id="home"
+                                        data-validation="required"
                                         checked>
 
                                     <label class="form-check-label"
@@ -234,7 +236,8 @@ ob_start();
                                     <input class="form-check-input"
                                         type="radio"
                                         name="addressType"
-                                        id="work">
+                                        id="work"
+                                        data-validation="required">
 
                                     <label class="form-check-label"
                                         for="work">
@@ -251,7 +254,8 @@ ob_start();
                                     <input class="form-check-input"
                                         type="radio"
                                         name="addressType"
-                                        id="other">
+                                        id="other"
+                                        data-validation="required">
 
                                     <label class="form-check-label"
                                         for="other">
@@ -264,6 +268,8 @@ ob_start();
 
                             </div>
 
+                            <span class="error text-danger" id="addressTypeError"></span>
+
                         </div>
 
 
@@ -275,7 +281,10 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="fullname"
+                                data-validation="required alpha"
                                 placeholder="Enter full name">
+                            <span class="error text-danger" id="fullnameError"></span>
 
                         </div>
 
@@ -288,7 +297,12 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="mobile"
+                                data-validation="required numeric min max"
+                                data-min="10"
+                                data-max="10"
                                 placeholder="Enter mobile number">
+                            <span class="error text-danger" id="mobileError"></span>
 
                         </div>
 
@@ -300,8 +314,11 @@ ob_start();
                             </label>
 
                             <textarea class="form-control"
+                                name="address"
+                                data-validation="required"
                                 rows="3"
                                 placeholder="House No., Street, Area"></textarea>
+                            <span class="error text-danger" id="addressError"></span>
 
                         </div>
 
@@ -314,7 +331,10 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="city"
+                                data-validation="required alpha"
                                 placeholder="City / Village">
+                            <span class="error text-danger" id="cityError"></span>
 
                         </div>
 
@@ -327,7 +347,10 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="district"
+                                data-validation="required alpha"
                                 placeholder="District">
+                            <span class="error text-danger" id="districtError"></span>
 
                         </div>
 
@@ -338,9 +361,13 @@ ob_start();
                                 State
                             </label>
 
-                            <select class="form-select">
+                            <select class="form-select"
+                                name="state"
+                                data-validation="required">
 
-                                <option selected>
+                                <option value="" selected>Select state</option>
+
+                                <option>
                                     Gujarat
                                 </option>
 
@@ -357,6 +384,7 @@ ob_start();
                                 </option>
 
                             </select>
+                            <span class="error text-danger" id="stateError"></span>
 
                         </div>
 
@@ -369,7 +397,12 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="pincode"
+                                data-validation="required numeric min max"
+                                data-min="6"
+                                data-max="6"
                                 placeholder="Pincode">
+                            <span class="error text-danger" id="pincodeError"></span>
 
                         </div>
 
@@ -398,18 +431,19 @@ ob_start();
 
                     <div class="d-flex gap-2 mt-4">
 
-                        <button class="btn btn-success">
+                        <button type="submit" class="btn btn-success">
 
                             <i class="bi bi-check2 me-1"></i>
                             Save Address
 
                         </button>
 
-                        <button class="btn btn-outline-secondary">
+                        <button type="button" class="btn btn-outline-secondary">
                             Cancel
                         </button>
 
                     </div>
+                    </form>
 
                 </div>
 

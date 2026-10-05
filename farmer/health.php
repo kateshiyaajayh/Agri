@@ -110,7 +110,7 @@ ob_start();
             Add Health Record
         </h5>
 
-        <form>
+        <form novalidate>
 
             <div class="row g-3">
 
@@ -120,7 +120,9 @@ ob_start();
                         Animal
                     </label>
 
-                    <select class="form-select">
+                    <select class="form-select"
+                        name="animal"
+                        data-validation="required">
 
                         <option selected disabled>
                             Select animal
@@ -132,6 +134,7 @@ ob_start();
                         <option>AN004 - Gir Cow</option>
 
                     </select>
+                    <span class="error text-danger" id="animalError"></span>
 
                 </div>
 
@@ -143,7 +146,10 @@ ob_start();
                     </label>
 
                     <input type="date"
-                        class="form-control">
+                        class="form-control"
+                        name="vaccination_date"
+                        data-validation="required">
+                    <span class="error text-danger" id="vaccination_dateError"></span>
 
                 </div>
 
@@ -155,7 +161,10 @@ ob_start();
                     </label>
 
                     <input type="date"
-                        class="form-control">
+                        class="form-control"
+                        name="next_vaccination"
+                        data-validation="required">
+                    <span class="error text-danger" id="next_vaccinationError"></span>
 
                 </div>
 
@@ -168,7 +177,10 @@ ob_start();
 
                     <input type="text"
                         class="form-control"
+                        name="health_issue"
+                        data-validation="required"
                         placeholder="Enter health issue">
+                    <span class="error text-danger" id="health_issueError"></span>
 
                 </div>
 
@@ -181,7 +193,10 @@ ob_start();
 
                     <input type="text"
                         class="form-control"
+                        name="treatment"
+                        data-validation="required"
                         placeholder="Enter treatment">
+                    <span class="error text-danger" id="treatmentError"></span>
 
                 </div>
 
@@ -194,7 +209,10 @@ ob_start();
 
                     <input type="text"
                         class="form-control"
+                        name="vet_details"
+                        data-validation="required"
                         placeholder="Enter veterinarian details">
+                    <span class="error text-danger" id="vet_detailsError"></span>
 
                 </div>
 

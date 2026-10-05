@@ -33,7 +33,7 @@ ob_start();
                     Personal Information
                 </h5>
 
-                <form>
+                <form novalidate>
 
                     <div class="row g-3">
 
@@ -45,7 +45,10 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="fullname"
+                                data-validation="required alpha"
                                 value="Farmer">
+                            <span class="error text-danger" id="fullnameError"></span>
 
                         </div>
 
@@ -58,7 +61,12 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="mobile"
+                                data-validation="required numeric min max"
+                                data-min="10"
+                                data-max="10"
                                 value="9876543210">
+                            <span class="error text-danger" id="mobileError"></span>
 
                         </div>
 
@@ -71,7 +79,10 @@ ob_start();
 
                             <input type="email"
                                 class="form-control"
+                                name="email"
+                                data-validation="required email"
                                 value="farmer@example.com">
+                            <span class="error text-danger" id="emailError"></span>
 
                         </div>
 
@@ -83,7 +94,10 @@ ob_start();
                             </label>
 
                             <textarea class="form-control"
+                                name="address"
+                                data-validation="required"
                                 rows="3">Village Road</textarea>
+                            <span class="error text-danger" id="addressError"></span>
 
                         </div>
 
@@ -96,7 +110,10 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="city"
+                                data-validation="required alpha"
                                 value="Rajkot">
+                            <span class="error text-danger" id="cityError"></span>
 
                         </div>
 
@@ -109,7 +126,10 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="district"
+                                data-validation="required alpha"
                                 value="Rajkot">
+                            <span class="error text-danger" id="districtError"></span>
 
                         </div>
 
@@ -122,7 +142,10 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="state"
+                                data-validation="required alpha"
                                 value="Gujarat">
+                            <span class="error text-danger" id="stateError"></span>
 
                         </div>
 
@@ -190,7 +213,7 @@ ob_start();
                     Change Password
                 </h5>
 
-                <form>
+                <form novalidate>
 
                     <div class="mb-3">
 
@@ -200,7 +223,10 @@ ob_start();
 
                         <input type="password"
                             class="form-control"
+                            name="current_password"
+                            data-validation="required"
                             placeholder="Enter current password">
+                        <span class="error text-danger" id="current_passwordError"></span>
 
                     </div>
 
@@ -213,7 +239,13 @@ ob_start();
 
                         <input type="password"
                             class="form-control"
+                            name="new_password"
+                            id="new_password"
+                            data-validation="required strongPassword min max"
+                            data-min="8"
+                            data-max="25"
                             placeholder="Enter new password">
+                        <span class="error text-danger" id="new_passwordError"></span>
 
                     </div>
 
@@ -226,7 +258,11 @@ ob_start();
 
                         <input type="password"
                             class="form-control"
+                            name="confirm_password"
+                            data-password-id="new_password"
+                            data-validation="required confirmPassword"
                             placeholder="Confirm new password">
+                        <span class="error text-danger" id="confirm_passwordError"></span>
 
                     </div>
 

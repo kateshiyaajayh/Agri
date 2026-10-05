@@ -22,6 +22,7 @@ ob_start();
     </div>
 
 
+    <form action="checkout.php" method="post" novalidate>
     <div class="row g-4">
 
         <!-- Left Side -->
@@ -59,7 +60,10 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="fullname"
+                                data-validation="required alpha"
                                 placeholder="Enter full name">
+                            <span class="error text-danger" id="fullnameError"></span>
 
                         </div>
 
@@ -72,7 +76,12 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="mobile"
+                                data-validation="required numeric min max"
+                                data-min="10"
+                                data-max="10"
                                 placeholder="Enter mobile number">
+                            <span class="error text-danger" id="mobileError"></span>
 
                         </div>
 
@@ -84,8 +93,11 @@ ob_start();
                             </label>
 
                             <textarea class="form-control"
+                                name="address"
+                                data-validation="required"
                                 rows="3"
                                 placeholder="House No., Street, Area"></textarea>
+                            <span class="error text-danger" id="addressError"></span>
 
                         </div>
 
@@ -98,7 +110,10 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="city"
+                                data-validation="required alpha"
                                 placeholder="City">
+                            <span class="error text-danger" id="cityError"></span>
 
                         </div>
 
@@ -111,7 +126,10 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="district"
+                                data-validation="required alpha"
                                 placeholder="District">
+                            <span class="error text-danger" id="districtError"></span>
 
                         </div>
 
@@ -122,9 +140,15 @@ ob_start();
                                 State
                             </label>
 
-                            <select class="form-select">
+                            <select class="form-select"
+                                name="state"
+                                data-validation="required">
 
-                                <option selected>
+                                <option value="" selected>
+                                    Select state
+                                </option>
+
+                                <option>
                                     Gujarat
                                 </option>
 
@@ -141,6 +165,7 @@ ob_start();
                                 </option>
 
                             </select>
+                            <span class="error text-danger" id="stateError"></span>
 
                         </div>
 
@@ -153,7 +178,12 @@ ob_start();
 
                             <input type="text"
                                 class="form-control"
+                                name="pincode"
+                                data-validation="required numeric min max"
+                                data-min="6"
+                                data-max="6"
                                 placeholder="Enter pincode">
+                            <span class="error text-danger" id="pincodeError"></span>
 
                         </div>
 
@@ -191,6 +221,7 @@ ob_start();
                                 type="radio"
                                 name="payment"
                                 id="cod"
+                                data-validation="required"
                                 checked>
 
                             <label class="form-check-label"
@@ -219,7 +250,8 @@ ob_start();
                             <input class="form-check-input"
                                 type="radio"
                                 name="payment"
-                                id="online">
+                                id="online"
+                                data-validation="required">
 
                             <label class="form-check-label"
                                 for="online">
@@ -237,6 +269,8 @@ ob_start();
                         </div>
 
                     </div>
+
+                    <span class="error text-danger" id="paymentError"></span>
 
                 </div>
 
@@ -375,7 +409,7 @@ ob_start();
                     </div>
 
 
-                    <button class="btn btn-success w-100 py-2">
+                    <button type="submit" class="btn btn-success w-100 py-2">
 
                         <i class="bi bi-check-circle me-1"></i>
                         Place Order
@@ -426,6 +460,7 @@ ob_start();
         </div>
 
     </div>
+    </form>
 
 </div>
 

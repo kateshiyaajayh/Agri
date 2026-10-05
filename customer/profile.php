@@ -48,110 +48,135 @@ ob_start();
                     </div>
 
 
-                    <div class="row g-3">
+                    <form action="profile.php" method="post" novalidate>
+                        <div class="row g-3">
 
-                        <div class="col-md-6">
+                            <div class="col-md-6">
 
-                            <label class="form-label">
-                                Full Name
-                            </label>
+                                <label class="form-label">
+                                    Full Name
+                                </label>
 
-                            <input type="text"
-                                class="form-control"
-                                value="Customer Name">
+                                <input type="text"
+                                    class="form-control"
+                                    name="fullname"
+                                    data-validation="required alpha"
+                                    value="Customer Name">
+                                <span class="error text-danger" id="fullnameError"></span>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Mobile Number
+                                </label>
+
+                                <input type="text"
+                                    class="form-control"
+                                    name="mobile"
+                                    data-validation="required numeric min max"
+                                    data-min="10"
+                                    data-max="10"
+                                    value="9876543210">
+                                <span class="error text-danger" id="mobileError"></span>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Email Address
+                                </label>
+
+                                <input type="email"
+                                    class="form-control"
+                                    name="email"
+                                    data-validation="required email"
+                                    value="customer@gmail.com">
+                                <span class="error text-danger" id="emailError"></span>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    City / Village
+                                </label>
+
+                                <input type="text"
+                                    class="form-control"
+                                    name="city"
+                                    data-validation="required alpha"
+                                    value="Rajkot">
+                                <span class="error text-danger" id="cityError"></span>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    District
+                                </label>
+
+                                <input type="text"
+                                    class="form-control"
+                                    name="district"
+                                    data-validation="required alpha"
+                                    value="Rajkot">
+                                <span class="error text-danger" id="districtError"></span>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    State
+                                </label>
+
+                                <input type="text"
+                                    class="form-control"
+                                    name="state"
+                                    data-validation="required alpha"
+                                    value="Gujarat">
+                                <span class="error text-danger" id="stateError"></span>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label class="form-label">
+                                    Address
+                                </label>
+
+                                <textarea class="form-control"
+                                    name="address"
+                                    data-validation="required"
+                                    rows="3">Rajkot, Gujarat</textarea>
+                                <span class="error text-danger" id="addressError"></span>
+
+                            </div>
 
                         </div>
 
 
-                        <div class="col-md-6">
+                        <div class="mt-4">
 
-                            <label class="form-label">
-                                Mobile Number
-                            </label>
+                            <button type="submit" class="btn btn-success px-4">
 
-                            <input type="text"
-                                class="form-control"
-                                value="9876543210">
+                                <i class="bi bi-check2 me-1"></i>
+                                Save Changes
 
-                        </div>
-
-
-                        <div class="col-md-6">
-
-                            <label class="form-label">
-                                Email Address
-                            </label>
-
-                            <input type="email"
-                                class="form-control"
-                                value="customer@gmail.com">
+                            </button>
 
                         </div>
-
-
-                        <div class="col-md-6">
-
-                            <label class="form-label">
-                                City / Village
-                            </label>
-
-                            <input type="text"
-                                class="form-control"
-                                value="Rajkot">
-
-                        </div>
-
-
-                        <div class="col-md-6">
-
-                            <label class="form-label">
-                                District
-                            </label>
-
-                            <input type="text"
-                                class="form-control"
-                                value="Rajkot">
-
-                        </div>
-
-
-                        <div class="col-md-6">
-
-                            <label class="form-label">
-                                State
-                            </label>
-
-                            <input type="text"
-                                class="form-control"
-                                value="Gujarat">
-
-                        </div>
-
-
-                        <div class="col-12">
-
-                            <label class="form-label">
-                                Address
-                            </label>
-
-                            <textarea class="form-control"
-                                rows="3">Rajkot, Gujarat</textarea>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="mt-4">
-
-                        <button class="btn btn-success px-4">
-
-                            <i class="bi bi-check2 me-1"></i>
-                            Save Changes
-
-                        </button>
-
-                    </div>
+                    </form>
 
                 </div>
 
@@ -172,54 +197,69 @@ ob_start();
                     </small>
 
 
-                    <div class="row g-3 mt-2">
+                    <form action="profile.php" method="post" novalidate>
+                        <div class="row g-3 mt-2">
 
-                        <div class="col-md-4">
+                            <div class="col-md-4">
 
-                            <label class="form-label">
-                                Current Password
-                            </label>
+                                <label class="form-label">
+                                    Current Password
+                                </label>
 
-                            <input type="password"
-                                class="form-control"
-                                placeholder="Current password">
+                                <input type="password"
+                                    class="form-control"
+                                    name="current_password"
+                                    data-validation="required"
+                                    placeholder="Current password">
+                                <span class="error text-danger" id="current_passwordError"></span>
+
+                            </div>
+
+
+                            <div class="col-md-4">
+
+                                <label class="form-label">
+                                    New Password
+                                </label>
+
+                                <input type="password"
+                                    class="form-control"
+                                    name="new_password"
+                                    id="new_password"
+                                    data-validation="required strongPassword min max"
+                                    data-min="8"
+                                    data-max="25"
+                                    placeholder="New password">
+                                <span class="error text-danger" id="new_passwordError"></span>
+
+                            </div>
+
+
+                            <div class="col-md-4">
+
+                                <label class="form-label">
+                                    Confirm Password
+                                </label>
+
+                                <input type="password"
+                                    class="form-control"
+                                    name="confirm_password"
+                                    data-password-id="new_password"
+                                    data-validation="required confirmPassword"
+                                    placeholder="Confirm password">
+                                <span class="error text-danger" id="confirm_passwordError"></span>
+
+                            </div>
 
                         </div>
 
 
-                        <div class="col-md-4">
+                        <button type="submit" class="btn btn-outline-success mt-3">
 
-                            <label class="form-label">
-                                New Password
-                            </label>
+                            Update Password
 
-                            <input type="password"
-                                class="form-control"
-                                placeholder="New password">
-
-                        </div>
-
-
-                        <div class="col-md-4">
-
-                            <label class="form-label">
-                                Confirm Password
-                            </label>
-
-                            <input type="password"
-                                class="form-control"
-                                placeholder="Confirm password">
-
-                        </div>
-
-                    </div>
-
-
-                    <button class="btn btn-outline-success mt-3">
-
-                        Update Password
-
-                    </button>
+                        </button>
+                    </form>
 
                 </div>
 

@@ -110,7 +110,7 @@ ob_start();
             Add Daily Milk Record
         </h5>
 
-        <form>
+        <form novalidate>
 
             <div class="row g-3">
 
@@ -121,7 +121,10 @@ ob_start();
                     </label>
 
                     <input type="date"
-                        class="form-control">
+                        class="form-control"
+                        name="collection_date"
+                        data-validation="required">
+                    <span class="error text-danger" id="collection_dateError"></span>
 
                 </div>
 
@@ -132,7 +135,9 @@ ob_start();
                         Session
                     </label>
 
-                    <select class="form-select">
+                    <select class="form-select"
+                        name="session"
+                        data-validation="required">
 
                         <option selected disabled>
                             Select session
@@ -142,6 +147,7 @@ ob_start();
                         <option>Evening</option>
 
                     </select>
+                    <span class="error text-danger" id="sessionError"></span>
 
                 </div>
 
@@ -156,6 +162,8 @@ ob_start();
 
                         <input type="number"
                             class="form-control"
+                            name="quantity"
+                            data-validation="required numeric"
                             placeholder="Enter quantity">
 
                         <span class="input-group-text">
@@ -163,6 +171,7 @@ ob_start();
                         </span>
 
                     </div>
+                    <span class="error text-danger" id="quantityError"></span>
 
                 </div>
 
@@ -178,6 +187,8 @@ ob_start();
                         <input type="number"
                             step="0.1"
                             class="form-control"
+                            name="fat"
+                            data-validation="required"
                             placeholder="Enter fat">
 
                         <span class="input-group-text">
@@ -185,6 +196,7 @@ ob_start();
                         </span>
 
                     </div>
+                    <span class="error text-danger" id="fatError"></span>
 
                 </div>
 
@@ -200,6 +212,8 @@ ob_start();
                         <input type="number"
                             step="0.1"
                             class="form-control"
+                            name="snf"
+                            data-validation="required"
                             placeholder="Enter SNF">
 
                         <span class="input-group-text">
@@ -207,6 +221,7 @@ ob_start();
                         </span>
 
                     </div>
+                    <span class="error text-danger" id="snfError"></span>
 
                 </div>
 
@@ -217,7 +232,9 @@ ob_start();
                         Quality
                     </label>
 
-                    <select class="form-select">
+                    <select class="form-select"
+                        name="quality"
+                        data-validation="required">
 
                         <option selected disabled>
                             Select quality
@@ -228,6 +245,7 @@ ob_start();
                         <option>Average</option>
 
                     </select>
+                    <span class="error text-danger" id="qualityError"></span>
 
                 </div>
 

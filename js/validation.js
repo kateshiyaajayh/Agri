@@ -188,4 +188,49 @@ $(document).ready(function () {
       e.preventDefault();
     }
   });
+
+  /* ===== STATIC LOGIN ===== */
+  $("#loginForm input").on("input", function () {
+    $("#loginError").addClass("d-none");
+  });
+
+  $("#loginForm").on("submit", function (e) {
+    e.preventDefault();
+
+    if ($("#loginForm .is-invalid").length > 0) return;
+
+    let email = $("#email").val().trim().toLowerCase();
+    let password = $("#password").val();
+
+    if (email === "user@gmail.com" && password === "User@1234") {
+      window.location.href = "../customer/dashboard.php";
+    } else if (email === "farmer@gmail.com" && password === "Farmer@1234") {
+      window.location.href = "../farmer/dashboard.php";
+    } else if (email === "admin@gmail.com" && password === "Admin@1234") {
+      window.location.href = "../admin/dashboard.php";
+    } else {
+      $("#loginError").removeClass("d-none");
+    }
+  });
+
+  /* ===== STATIC REGISTER ===== */
+  $("#registerForm").on("submit", function (e) {
+    e.preventDefault();
+
+    if ($("#registerForm .is-invalid").length > 0) return;
+
+    this.reset();
+    $(this).find(".is-valid, .is-invalid").removeClass("is-valid is-invalid");
+    $(this).find(".error").text("");
+
+    $("#registerSuccess").removeClass("d-none");
+    $("#registerSuccess")[0].scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  });
+
+  $("#registerForm input").on("input", function () {
+    $("#registerSuccess").addClass("d-none");
+  });
 });

@@ -1,0 +1,55 @@
+/*farmer layout*/
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.farmer-sidebar {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.nav-link {
+  color: #555;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: #eaf7ef;
+  color: #198754;
+}
+
+.card {
+  border-radius: 14px;
+}
+
+header {
+  min-height: 75px;
+}
+
+footer {
+  min-height: 55px;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 250px;
+  z-index: 1000;
+}
+.table th {
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.table td {
+  font-size: 14px;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: 0;
+}

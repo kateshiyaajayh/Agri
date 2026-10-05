@@ -1,13 +1,13 @@
 $(document).ready(function () {
   /*
-Validation rules and their meanings:
+  Validation rules and their meanings:
     required: Field must not be empty.
     email: Field must be a valid email address.
-    strongPassword: Password must be at least 8 characters, include  uppercase, lowercase, number, and special character.
+    strongPassword: Password must be at least 8 characters, include uppercase, lowercase, number, and special character.
     min: Field must have a minimum length (specified by data-min attribute).
-    data-min:Minimum characters (used with min validation).
+    data-min: Minimum characters (used with min validation).
     max: Field must have a maximum length (specified by data-max attribute).
-    data-max:Maximum characters (used with max validation).
+    data-max: Maximum characters (used with max validation).
     confirmPassword: Field must match the password field (specified by data-password-id attribute).
     data-password-id: ID of the password field to match (used with confirmPassword validation).
     terms: Field must be checked (for terms and conditions).
@@ -19,6 +19,7 @@ Validation rules and their meanings:
     data-min-items: Minimum number of checkboxes that must be selected (used with checkbox groups).
     data-max-items: Maximum number of checkboxes that can be selected (used with checkbox groups).
   */
+
   function validateField(input) {
     let field = $(input);
     let value = field.val().trim();
@@ -39,29 +40,48 @@ Validation rules and their meanings:
         errorMessage = "This field is required.";
       }
 
+      if (
+        !errorMessage &&
+        field.attr("type") === "radio" &&
+        validationType.includes("required")
+      ) {
+        let groupName = field.attr("name");
+
+        if (!$('input[name="' + groupName + '"]:checked').length) {
+          errorMessage = "Please select an option.";
+        }
+      }
+
       if (!errorMessage && validationType.includes("email")) {
         let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
         if (!emailPattern.test(value)) {
           errorMessage = "Please enter a valid email address.";
         }
       }
+
       if (!errorMessage && validationType.includes("strongPassword")) {
         let pwdRegex =
           /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,25}$/;
+
         if (!pwdRegex.test(value)) {
           errorMessage =
             "Password must be at least 8 characters, include uppercase, lowercase, number, and special character.";
         }
       }
+
       if (!errorMessage && validationType.includes("confirmPassword")) {
         let confirmPassword = value;
+
         let password = $("#" + field.data("password-id"))
           .val()
           .trim();
+
         if (confirmPassword !== password) {
           errorMessage = "Passwords do not match.";
         }
       }
+
       if (
         !errorMessage &&
         validationType.includes("terms") &&
@@ -151,7 +171,7 @@ Validation rules and their meanings:
       }
 
       let target =
-        field.attr("type") === "checkbox"
+        field.attr("type") === "checkbox" || field.attr("type") === "radio"
           ? $('input[name="' + field.attr("name") + '"]')
           : field;
 
@@ -172,11 +192,14 @@ Validation rules and their meanings:
 
   $("form").on("submit", function (e) {
     let isValid = true;
+
     $(this)
       .find("input, textarea, select")
       .each(function () {
         validateField(this);
+
         let errorSpan = $("#" + $(this).attr("name") + "Error");
+
         if (errorSpan.text().trim() !== "") {
           isValid = false;
         }

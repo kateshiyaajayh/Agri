@@ -29,7 +29,7 @@ ob_start();
             </p>
         </div>
 
-        <div class="d-flex gap-2">
+        <div class="d-flex flex-wrap gap-2">
 
             <a href="add-animal.php"
                 class="btn btn-success">

@@ -109,12 +109,12 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
 
         <!-- Main Area -->
-        <div class="flex-grow-1 d-flex flex-column">
+        <div class="admin-main flex-grow-1 d-flex flex-column">
 
             <!-- Header -->
             <header class="bg-white border-bottom px-3 px-md-4 py-3">
 
-                <div class="admin-header-inner d-flex align-items-center justify-content-between gap-2">
+                <div class="admin-header-inner d-flex flex-wrap align-items-center justify-content-between gap-2">
 
                     <div class="d-flex align-items-center gap-3">
 
@@ -170,7 +170,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
                         <div>
                             <h5 class="mb-0 fw-semibold"><?= $pageTitle ?></h5>
-                            <small class="admin-header-description text-muted">
+                            <small class="admin-header-description text-muted d-none d-sm-block">
                                 Manage your SmartDairyPro system
                             </small>
                         </div>
@@ -178,7 +178,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                     </div>
 
 
-                    <div class="d-flex align-items-center gap-3">
+                    <div class="d-flex align-items-center gap-3 ms-auto">
 
                         <a href="notifications.php"
                             class="text-dark fs-5">
@@ -216,7 +216,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             <!-- Footer -->
             <footer class="bg-white border-top px-3 px-md-4 py-3">
 
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
 
                     <small class="text-muted">
                         © 2026 SmartDairyPro

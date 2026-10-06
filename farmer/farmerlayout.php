@@ -95,12 +95,12 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
 
         <!-- Main Area -->
-        <div class="flex-grow-1 d-flex flex-column">
+        <div class="farmer-main flex-grow-1 d-flex flex-column">
 
             <!-- Header -->
             <header class="bg-white border-bottom px-3 px-md-4 py-3">
 
-                <div class="farmer-header-inner d-flex align-items-center justify-content-between gap-2">
+                <div class="farmer-header-inner d-flex flex-wrap align-items-center justify-content-between gap-2">
 
                     <div class="d-flex align-items-center gap-3">
 
@@ -112,39 +112,43 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                             <div class="mobile-menu bg-white border rounded shadow p-2">
 
                                 <a href="dashboard.php" class="nav-link">
-                                    Dashboard
+                                    <i class="bi bi-speedometer2 me-2"></i>Dashboard
                                 </a>
 
                                 <a href="products.php" class="nav-link">
-                                    Products
+                                    <i class="bi bi-box-seam me-2"></i>Products
                                 </a>
 
                                 <a href="animals.php" class="nav-link">
-                                    Animals
+                                    <i class="bi bi-heart-pulse me-2"></i>Animals
                                 </a>
 
                                 <a href="milk-collection.php" class="nav-link">
-                                    Milk Collection
+                                    <i class="bi bi-droplet me-2"></i>Milk Collection
                                 </a>
 
                                 <a href="sales.php" class="nav-link">
-                                    Sales & Earnings
+                                    <i class="bi bi-cash-stack me-2"></i>Sales &amp; Earnings
                                 </a>
 
                                 <a href="health.php" class="nav-link">
-                                    Animal Health
+                                    <i class="bi bi-heart-pulse me-2"></i>Animal Health
                                 </a>
 
                                 <a href="reports.php" class="nav-link">
-                                    Reports
+                                    <i class="bi bi-bar-chart me-2"></i>Reports
                                 </a>
 
                                 <a href="schemes.php" class="nav-link">
-                                    Government Schemes
+                                    <i class="bi bi-building me-2"></i>Government Schemes
                                 </a>
 
                                 <a href="profile.php" class="nav-link">
-                                    Profile
+                                    <i class="bi bi-person me-2"></i>Profile
+                                </a>
+
+                                <a href="#" class="nav-link text-danger">
+                                    <i class="bi bi-box-arrow-right me-2"></i>Logout
                                 </a>
 
                             </div>
@@ -152,14 +156,14 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
                         <div>
                             <h5 class="mb-0"><?= $pageTitle ?></h5>
-                            <small class="text-muted">
+                            <small class="text-muted d-none d-sm-block">
                                 Manage your dairy activities
                             </small>
                         </div>
 
                     </div>
 
-                    <div class="d-flex align-items-center gap-3">
+                    <div class="d-flex align-items-center gap-3 ms-auto">
 
                         <i class="bi bi-bell fs-5"></i>
 
@@ -186,8 +190,8 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             <!-- Footer -->
             <footer class="bg-white border-top px-3 px-md-4 py-3">
 
-                <div class="d-flex flex-column flex-sm-row
-                        justify-content-between align-items-center">
+                <div class="d-flex flex-wrap flex-sm-row
+                        justify-content-between align-items-center gap-2">
 
                     <small class="text-muted">
                         © 2026 SmartDairyPro

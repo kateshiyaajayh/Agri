@@ -147,7 +147,7 @@ ob_start();
 
     <div class="card-body">
 
-        <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
             <div>
                 <h5 class="fw-semibold mb-1">Recent Orders</h5>
                 <small class="text-muted">Latest customer orders</small>
@@ -247,7 +247,7 @@ ob_start();
 
             <div class="card-body">
 
-                <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
                     <div>
                         <h5 class="fw-semibold mb-1">Recent Customers</h5>
                         <small class="text-muted">Recently registered customers</small>
@@ -308,7 +308,7 @@ ob_start();
 
             <div class="card-body">
 
-                <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
                     <div>
                         <h5 class="fw-semibold mb-1">Recent Farmers</h5>
                         <small class="text-muted">Recently registered farmers</small>

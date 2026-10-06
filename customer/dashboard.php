@@ -9,7 +9,7 @@ ob_start();
 <div class="container-fluid px-3 px-md-4 py-4">
 
     <!-- Welcome -->
-    <div class="dashboard-welcome mb-4">
+    <div class="dashboard-welcome d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3 mb-4">
 
         <div>
 
@@ -38,7 +38,7 @@ ob_start();
     <!-- Summary Cards -->
     <div class="row g-4 mb-4">
 
-        <div class="col-sm-6 col-xl-3">
+        <div class="col-12 col-sm-6 col-xl-3">
 
             <div class="card dashboard-card border-0 shadow-sm h-100">
 
@@ -63,7 +63,7 @@ ob_start();
         </div>
 
 
-        <div class="col-sm-6 col-xl-3">
+        <div class="col-12 col-sm-6 col-xl-3">
 
             <div class="card dashboard-card border-0 shadow-sm h-100">
 
@@ -88,7 +88,7 @@ ob_start();
         </div>
 
 
-        <div class="col-sm-6 col-xl-3">
+        <div class="col-12 col-sm-6 col-xl-3">
 
             <div class="card dashboard-card border-0 shadow-sm h-100">
 
@@ -113,7 +113,7 @@ ob_start();
         </div>
 
 
-        <div class="col-sm-6 col-xl-3">
+        <div class="col-12 col-sm-6 col-xl-3">
 
             <div class="card dashboard-card border-0 shadow-sm h-100">
 

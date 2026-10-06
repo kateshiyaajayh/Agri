@@ -22,7 +22,7 @@ ob_start();
         </p>
     </div>
 
-    <div class="d-flex gap-2">
+    <div class="d-flex flex-wrap gap-2">
 
         <button class="btn btn-outline-success">
             <i class="bi bi-pencil"></i>

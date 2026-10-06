@@ -76,6 +76,23 @@ main {
   min-width: 0;
 }
 
+.farmer-main {
+  min-width: 0;
+  width: 100%;
+}
+
+.farmer-list-filters {
+  width: min(100%, 320px);
+}
+
+.farmer-list-filters > * {
+  min-width: 0;
+}
+
+.farmer-list-filters .input-group {
+  flex: 1 1 0;
+}
+
 main img,
 main canvas {
   max-width: 100%;

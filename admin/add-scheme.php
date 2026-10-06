@@ -170,7 +170,7 @@ ob_start();
 
                     <hr>
 
-                    <div class="d-flex gap-2">
+                    <div class="d-flex flex-column flex-sm-row gap-2">
 
                         <a href="schemes.php"
                             class="btn btn-light">

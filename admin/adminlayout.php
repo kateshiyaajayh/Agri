@@ -7,6 +7,15 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <html lang="en">
 
 <head>
+    <script>
+        document.documentElement.style.display = 'none';
+        var role = sessionStorage.getItem('role');
+        if (role === 'admin') {
+            document.documentElement.style.display = '';
+        } else {
+            location.replace('../auth/login.php');
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -98,7 +107,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                     Settings
                 </a>
 
-                <a href="../auth/login.php" class="nav-link text-danger">
+                <a href="../auth/login.php" class="nav-link text-danger" onclick="sessionStorage.removeItem('role')">
                     <i class="bi bi-box-arrow-right"></i>
                     Logout
                 </a>

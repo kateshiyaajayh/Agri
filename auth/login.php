@@ -180,6 +180,29 @@
         </div>
     </div>
 
+    <script>
+        const loginForm = document.getElementById("loginForm");
+        const loginRequiredAlert = document.createElement("div");
+
+        if (new URLSearchParams(window.location.search).get("login_required") === "1") {
+            loginRequiredAlert.className = "alert alert-warning small";
+            loginRequiredAlert.textContent = "Please login to continue";
+            loginForm.parentNode.insertBefore(loginRequiredAlert, loginForm);
+        }
+
+        loginForm.addEventListener("submit", function () {
+            const email = document.getElementById("email").value.trim().toLowerCase();
+            const password = document.getElementById("password").value;
+
+            if (email === "user@gmail.com" && password === "User@1234") {
+                sessionStorage.setItem("role", "user");
+            } else if (email === "farmer@gmail.com" && password === "Farmer@1234") {
+                sessionStorage.setItem("role", "farmer");
+            } else if (email === "admin@gmail.com" && password === "Admin@1234") {
+                sessionStorage.setItem("role", "admin");
+            }
+        }, true);
+    </script>
     <script src="../js/jquery-4.0.0.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/validation.js"></script>

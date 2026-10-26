@@ -7,6 +7,25 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <html lang="en">
 
 <head>
+    <script>
+        document.documentElement.style.display = 'none';
+        var role = sessionStorage.getItem('role');
+        var currentFile = location.pathname.split('/').pop();
+        if (!role) {
+            sessionStorage.setItem('role', 'guest');
+            role = 'guest';
+        }
+        var allowed = role === 'guest' || role === 'user' || role === 'farmer';
+        var guestAllowed = currentFile === 'dashboard.php' || currentFile === 'market.php';
+
+        if (!allowed) {
+            location.replace('../auth/login.php');
+        } else if (role === 'guest' && !guestAllowed) {
+            location.replace('../auth/login.php?login_required=1');
+        } else {
+            document.documentElement.style.display = '';
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -81,7 +100,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
 
                     <!-- Profile -->
-                    <div class="dropdown">
+                    <div class="dropdown" id="profileDropdown">
 
                         <button class="btn profile-btn dropdown-toggle"
                             type="button"
@@ -189,6 +208,19 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
                             <li>
 
+                                <a class="dropdown-item" id="farmerPanelLink"
+                                    href="../farmer/dashboard.php">
+
+                                    <i class="bi bi-person-badge me-2"></i>
+                                    Farmer Panel
+
+                                </a>
+
+                            </li>
+
+
+                            <li>
+
                                 <hr class="dropdown-divider">
 
                             </li>
@@ -197,7 +229,8 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                             <li>
 
                                 <a class="dropdown-item text-danger"
-                                    href="../auth/login.php">
+                                    href="../auth/login.php"
+                                    onclick="sessionStorage.removeItem('role')">
 
                                     <i class="bi bi-box-arrow-right me-2"></i>
                                     Logout
@@ -209,6 +242,12 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                         </ul>
 
                     </div>
+
+                    <div class="d-flex gap-2 d-none" id="guestActions">
+                        <a href="../auth/login.php" class="btn btn-outline-success btn-sm">Login</a>
+                        <a href="../auth/register.php" class="btn btn-success btn-sm">Register</a>
+                    </div>
+
                 </div>
 
             </div>
@@ -241,6 +280,19 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <script src="../js/jquery-4.0.0.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/validation.js"></script>
+    <script>
+        var role = sessionStorage.getItem('role');
+        var profileDropdown = document.getElementById('profileDropdown');
+        var guestActions = document.getElementById('guestActions');
+        var farmerPanelLink = document.getElementById('farmerPanelLink');
+
+        if (role === 'guest') {
+            profileDropdown.style.display = 'none';
+            guestActions.classList.remove('d-none');
+        } else if (role !== 'farmer') {
+            farmerPanelLink.parentElement.style.display = 'none';
+        }
+    </script>
 
 </body>
 

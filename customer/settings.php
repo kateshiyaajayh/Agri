@@ -188,7 +188,8 @@ ob_start();
                         </a>
 
                         <a href="../auth/login.php"
-                            class="btn btn-outline-danger">
+                            class="btn btn-outline-danger"
+                            onclick="sessionStorage.removeItem('role')">
 
                             <i class="bi bi-box-arrow-right me-1"></i>
                             Logout
@@ -268,6 +269,18 @@ ob_start();
                         <i class="bi bi-bell"></i>
 
                         <span>Notifications</span>
+
+                        <i class="bi bi-chevron-right ms-auto"></i>
+
+                    </a>
+
+
+                    <a href="/Agri/customer/become-farmer.php"
+                        class="settings-link">
+
+                        <i class="bi bi-person-badge"></i>
+
+                        <span>Become a Farmer</span>
 
                         <i class="bi bi-chevron-right ms-auto"></i>
 

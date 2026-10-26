@@ -16,6 +16,11 @@ ob_start();
         Manage your personal information and account settings.
     </p>
 
+    <a href="../customer/dashboard.php" class="btn btn-outline-success mt-3">
+        <i class="bi bi-person me-1"></i>
+        Go to Customer Panel
+    </a>
+
 </div>
 
 

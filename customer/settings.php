@@ -188,7 +188,8 @@ ob_start();
                         </a>
 
                         <a href="../auth/login.php"
-                            class="btn btn-outline-danger">
+                            class="btn btn-outline-danger"
+                            onclick="sessionStorage.removeItem('role')">
 
                             <i class="bi bi-box-arrow-right me-1"></i>
                             Logout

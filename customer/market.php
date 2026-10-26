@@ -18,7 +18,7 @@ ob_start();
             </p>
         </div>
 
-        <a href="profile.php" class="btn btn-outline-success">
+        <a href="cart.php" class="btn btn-outline-success">
             <i class="bi bi-cart3 me-1"></i>
             My Cart
         </a>
@@ -693,6 +693,25 @@ ob_start();
     </div>
 
 </div>
+
+<script>
+    if (sessionStorage.getItem('role') === 'guest') {
+        document.addEventListener('click', function (event) {
+            var button = event.target.closest('button');
+            if (!button) {
+                return;
+            }
+
+            var buttonText = button.textContent.trim();
+            if (button.classList.contains('wishlist-btn') ||
+                buttonText === 'Add to Cart' ||
+                buttonText === 'Buy') {
+                event.preventDefault();
+                window.location.href = '../auth/login.php?login_required=1';
+            }
+        }, true);
+    }
+</script>
 
 
 <?php

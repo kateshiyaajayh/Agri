@@ -519,4 +519,63 @@ h6 {
   text-decoration: underline;
 }
 
+@media (max-width: 991.98px) {
+  .login-intro,
+  .register-intro {
+    display: none;
+  }
 
+  .login-form-section,
+  .register-form-section {
+    min-height: 100vh;
+  }
+
+  .login-logo,
+  .register-logo {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .login-form-wrapper,
+  .register-form-wrapper {
+    padding: 35px 24px;
+  }
+
+  .login-options {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .role-options {
+    flex-direction: column;
+  }
+
+  .login-button,
+  #guestBtn,
+  .register-button {
+    min-height: 52px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .login-form-wrapper,
+  .register-form-wrapper {
+    padding: 28px 16px;
+  }
+
+  .login-heading h2 {
+    font-size: 30px;
+  }
+
+  .register-intro h1 {
+    font-size: 42px;
+  }
+
+  .input-group,
+  .input-group .form-control {
+    min-width: 0;
+  }
+}

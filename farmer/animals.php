@@ -25,7 +25,6 @@ ob_start();
 
 </div>
 
-
 <!-- Summary Cards -->
 <div class="row g-3 g-md-4 mb-4">
 
@@ -52,7 +51,6 @@ ob_start();
             </div>
         </div>
     </div>
-
 
     <div class="col-12 col-sm-6 col-xl-3">
         <div class="card border-0 shadow-sm h-100">

@@ -115,7 +115,7 @@ ob_start();
 
     <div class="card-body">
 
-        <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
 
             <div>
                 <h5 class="fw-semibold mb-1">
@@ -174,7 +174,6 @@ ob_start();
                 </tbody>
 
             </table>
-
         </div>
 
     </div>
@@ -187,7 +186,7 @@ ob_start();
 
     <div class="card-body">
 
-        <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
 
             <div>
                 <h5 class="fw-semibold mb-1">
@@ -246,7 +245,6 @@ ob_start();
                 </tbody>
 
             </table>
-
         </div>
 
     </div>
@@ -259,7 +257,7 @@ ob_start();
 
     <div class="card-body">
 
-        <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
 
             <div>
                 <h5 class="fw-semibold mb-1">
@@ -322,7 +320,6 @@ ob_start();
                 </tbody>
 
             </table>
-
         </div>
 
     </div>

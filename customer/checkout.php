@@ -293,7 +293,7 @@ ob_start();
 
 
                     <!-- Product 1 -->
-                    <div class="checkout-product">
+                    <div class="checkout-product d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-2 gap-sm-3">
 
                         <div>
 
@@ -318,7 +318,7 @@ ob_start();
 
 
                     <!-- Product 2 -->
-                    <div class="checkout-product">
+                    <div class="checkout-product d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-2 gap-sm-3">
 
                         <div>
 
@@ -343,7 +343,7 @@ ob_start();
 
 
                     <!-- Product 3 -->
-                    <div class="checkout-product">
+                    <div class="checkout-product d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-2 gap-sm-3">
 
                         <div>
 

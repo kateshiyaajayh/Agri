@@ -21,13 +21,13 @@
 
                 <!-- Left Section -->
                 <div class="col-12 col-lg-5 login-intro">
-                    <div class="login-intro-content">
+                    <div class="login-intro-content px-3 px-sm-4 px-lg-5 py-4 py-lg-5">
 
                         <img src="../images/logo.png"
                             alt="SmartDairyPro"
-                            class="login-logo">
+                            class="login-logo img-fluid">
 
-                        <h1>
+                        <h1 class="display-5">
                             Welcome back to
                             <span>SmartDairyPro.</span>
                         </h1>
@@ -38,7 +38,7 @@
                             your local dairy community.
                         </p>
 
-                        <div class="login-features">
+                        <div class="login-features d-none d-lg-flex">
 
                             <div class="feature-item">
                                 <div class="feature-icon">
@@ -70,7 +70,7 @@
 
                 <!-- Login Section -->
                 <div class="col-12 col-lg-7 login-form-section">
-                    <div class="login-form-wrapper">
+                    <div class="login-form-wrapper px-3 px-sm-4 px-lg-5 py-4 py-lg-5">
 
                         <div class="login-heading">
                             <h2>Welcome back</h2>

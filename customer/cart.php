@@ -45,7 +45,7 @@ ob_start();
 
 
                     <!-- Item 1 -->
-                    <div class="cart-item">
+                    <div class="cart-item d-flex flex-column flex-sm-row align-items-sm-center gap-3">
 
                         <div class="cart-product-image">
 
@@ -55,7 +55,7 @@ ob_start();
                         </div>
 
 
-                        <div class="cart-product-info">
+                        <div class="cart-product-info flex-grow-1">
 
                             <small class="text-success">
                                 Milk
@@ -88,7 +88,7 @@ ob_start();
                         </div>
 
 
-                        <div class="cart-product-price">
+                        <div class="cart-product-price d-flex flex-row flex-sm-column align-items-center align-items-sm-end justify-content-between gap-2 gap-sm-3">
 
                             <strong>
                                 ₹120
@@ -107,7 +107,7 @@ ob_start();
 
 
                     <!-- Item 2 -->
-                    <div class="cart-item">
+                    <div class="cart-item d-flex flex-column flex-sm-row align-items-sm-center gap-3">
 
                         <div class="cart-product-image">
 
@@ -117,7 +117,7 @@ ob_start();
                         </div>
 
 
-                        <div class="cart-product-info">
+                        <div class="cart-product-info flex-grow-1">
 
                             <small class="text-success">
                                 Curd
@@ -150,7 +150,7 @@ ob_start();
                         </div>
 
 
-                        <div class="cart-product-price">
+                        <div class="cart-product-price d-flex flex-row flex-sm-column align-items-center align-items-sm-end justify-content-between gap-2 gap-sm-3">
 
                             <strong>
                                 ₹80
@@ -169,7 +169,7 @@ ob_start();
 
 
                     <!-- Item 3 -->
-                    <div class="cart-item">
+                    <div class="cart-item d-flex flex-column flex-sm-row align-items-sm-center gap-3">
 
                         <div class="cart-product-image">
 
@@ -179,7 +179,7 @@ ob_start();
                         </div>
 
 
-                        <div class="cart-product-info">
+                        <div class="cart-product-info flex-grow-1">
 
                             <small class="text-success">
                                 Paneer
@@ -212,7 +212,7 @@ ob_start();
                         </div>
 
 
-                        <div class="cart-product-price">
+                        <div class="cart-product-price d-flex flex-row flex-sm-column align-items-center align-items-sm-end justify-content-between gap-2 gap-sm-3">
 
                             <strong>
                                 ₹320

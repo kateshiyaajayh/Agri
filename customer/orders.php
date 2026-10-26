@@ -87,7 +87,7 @@ ob_start();
             <!-- Order 1 -->
             <div class="order-card">
 
-                <div class="order-top">
+                <div class="order-top d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
 
                     <div>
 
@@ -115,9 +115,9 @@ ob_start();
                 <hr>
 
 
-                <div class="order-content">
+                <div class="order-content d-flex flex-column flex-md-row align-items-stretch align-items-md-center justify-content-between gap-3 gap-md-4">
 
-                    <div class="order-products">
+                    <div class="order-products flex-grow-1">
 
                         <div class="order-product">
 
@@ -169,7 +169,7 @@ ob_start();
                     </div>
 
 
-                    <div class="order-summary">
+                    <div class="order-summary text-start text-md-end flex-shrink-0">
 
                         <small class="text-muted">
                             Total Amount
@@ -196,7 +196,7 @@ ob_start();
             <!-- Order 2 -->
             <div class="order-card">
 
-                <div class="order-top">
+                <div class="order-top d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
 
                     <div>
 
@@ -224,9 +224,9 @@ ob_start();
                 <hr>
 
 
-                <div class="order-content">
+                <div class="order-content d-flex flex-column flex-md-row align-items-stretch align-items-md-center justify-content-between gap-3 gap-md-4">
 
-                    <div class="order-products">
+                    <div class="order-products flex-grow-1">
 
                         <div class="order-product">
 
@@ -254,7 +254,7 @@ ob_start();
                     </div>
 
 
-                    <div class="order-summary">
+                    <div class="order-summary text-start text-md-end flex-shrink-0">
 
                         <small class="text-muted">
                             Total Amount
@@ -281,7 +281,7 @@ ob_start();
             <!-- Order 3 -->
             <div class="order-card">
 
-                <div class="order-top">
+                <div class="order-top d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
 
                     <div>
 
@@ -309,9 +309,9 @@ ob_start();
                 <hr>
 
 
-                <div class="order-content">
+                <div class="order-content d-flex flex-column flex-md-row align-items-stretch align-items-md-center justify-content-between gap-3 gap-md-4">
 
-                    <div class="order-products">
+                    <div class="order-products flex-grow-1">
 
                         <div class="order-product">
 
@@ -339,7 +339,7 @@ ob_start();
                     </div>
 
 
-                    <div class="order-summary">
+                    <div class="order-summary text-start text-md-end flex-shrink-0">
 
                         <small class="text-muted">
                             Total Amount
@@ -366,7 +366,7 @@ ob_start();
             <!-- Order 4 -->
             <div class="order-card">
 
-                <div class="order-top">
+                <div class="order-top d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
 
                     <div>
 
@@ -394,9 +394,9 @@ ob_start();
                 <hr>
 
 
-                <div class="order-content">
+                <div class="order-content d-flex flex-column flex-md-row align-items-stretch align-items-md-center justify-content-between gap-3 gap-md-4">
 
-                    <div class="order-products">
+                    <div class="order-products flex-grow-1">
 
                         <div class="order-product">
 
@@ -424,7 +424,7 @@ ob_start();
                     </div>
 
 
-                    <div class="order-summary">
+                    <div class="order-summary text-start text-md-end flex-shrink-0">
 
                         <small class="text-muted">
                             Total Amount

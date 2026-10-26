@@ -15,7 +15,7 @@ ob_start();
 </div>
 
 
-<div class="d-flex justify-content-between align-items-center mb-4">
+<div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-4">
 
     <div>
         <h3 class="fw-bold mb-1">Customer Details</h3>
@@ -24,7 +24,7 @@ ob_start();
         </p>
     </div>
 
-    <div class="d-flex gap-2">
+    <div class="d-flex flex-wrap gap-2">
 
         <button class="btn btn-outline-success">
             <i class="bi bi-pencil"></i>
@@ -268,7 +268,6 @@ ob_start();
                         </tbody>
 
                     </table>
-
                 </div>
 
             </div>

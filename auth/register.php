@@ -21,13 +21,13 @@
 
                 <!-- Left Section -->
                 <div class="col-12 col-lg-5 register-intro">
-                    <div class="register-intro-content">
+                    <div class="register-intro-content px-3 px-sm-4 px-lg-5 py-4 py-lg-5">
 
                         <img src="../images/logo.png"
                             alt="SmartDairyPro"
-                            class="register-logo">
+                            class="register-logo img-fluid">
 
-                        <h1>
+                        <h1 class="display-5">
                             Join the
                             <span>SmartDairyPro</span>
                             family.
@@ -39,7 +39,7 @@
                             support local farmers.
                         </p>
 
-                        <div class="register-features">
+                        <div class="register-features d-none d-lg-flex">
 
                             <div class="feature-item">
                                 <div class="feature-icon">
@@ -67,7 +67,7 @@
 
                 <!-- Right Section -->
                 <div class="col-12 col-lg-7 register-form-section">
-                    <div class="register-form-wrapper">
+                    <div class="register-form-wrapper px-3 px-sm-4 px-lg-5 py-4 py-lg-5">
 
                         <div class="form-title">
                             <h2>Create your account</h2>

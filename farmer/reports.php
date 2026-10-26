@@ -230,7 +230,6 @@ ob_start();
                 </tbody>
 
             </table>
-
         </div>
 
     </div>
@@ -379,7 +378,6 @@ ob_start();
                 </tbody>
 
             </table>
-
         </div>
 
     </div>
@@ -526,7 +524,6 @@ ob_start();
                 </tbody>
 
             </table>
-
         </div>
 
     </div>

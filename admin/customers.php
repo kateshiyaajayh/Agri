@@ -5,6 +5,7 @@ $pageTitle = "Customers";
 ob_start();
 ?>
 
+<div class="customers-page">
 <div class="mb-4">
     <h3 class="fw-bold mb-1">Customers</h3>
     <p class="text-muted mb-0">
@@ -69,7 +70,7 @@ ob_start();
                 </small>
             </div>
 
-            <div class="d-flex gap-2">
+            <div class="admin-list-filters d-flex flex-column flex-sm-row gap-2 w-100">
 
                 <input type="text"
                     class="form-control"
@@ -278,10 +279,11 @@ ob_start();
                 </tbody>
 
             </table>
-
         </div>
 
     </div>
+
+</div>
 
 </div>
 

@@ -147,7 +147,7 @@ ob_start();
                 </small>
             </div>
 
-            <div class="d-flex gap-2">
+            <div class="farmer-list-filters d-flex flex-column flex-sm-row gap-2 w-100">
 
                 <div class="input-group">
 
@@ -283,7 +283,6 @@ ob_start();
                 </tbody>
 
             </table>
-
         </div>
 
     </div>

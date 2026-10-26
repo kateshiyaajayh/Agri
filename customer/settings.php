@@ -32,7 +32,7 @@ ob_start();
                     <hr class="my-4">
 
 
-                    <div class="setting-row">
+                    <div class="setting-row d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3">
 
                         <div>
                             <h6 class="mb-1">Email Notifications</h6>
@@ -50,7 +50,7 @@ ob_start();
                     </div>
 
 
-                    <div class="setting-row">
+                    <div class="setting-row d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3">
 
                         <div>
                             <h6 class="mb-1">Order Updates</h6>
@@ -68,7 +68,7 @@ ob_start();
                     </div>
 
 
-                    <div class="setting-row">
+                    <div class="setting-row d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3">
 
                         <div>
                             <h6 class="mb-1">Offers & Promotions</h6>
@@ -85,7 +85,7 @@ ob_start();
                     </div>
 
 
-                    <div class="setting-row">
+                    <div class="setting-row d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3">
 
                         <div>
                             <h6 class="mb-1">Save Address</h6>
@@ -120,7 +120,7 @@ ob_start();
                     <hr class="my-4">
 
 
-                    <div class="setting-row">
+                    <div class="setting-row d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3">
 
                         <div>
                             <h6 class="mb-1">Profile Visibility</h6>
@@ -140,7 +140,7 @@ ob_start();
                     </div>
 
 
-                    <div class="setting-row">
+                    <div class="setting-row d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3">
 
                         <div>
                             <h6 class="mb-1">Order History</h6>
@@ -269,6 +269,18 @@ ob_start();
                         <i class="bi bi-bell"></i>
 
                         <span>Notifications</span>
+
+                        <i class="bi bi-chevron-right ms-auto"></i>
+
+                    </a>
+
+
+                    <a href="/Agri/customer/become-farmer.php"
+                        class="settings-link">
+
+                        <i class="bi bi-person-badge"></i>
+
+                        <span>Become a Farmer</span>
 
                         <i class="bi bi-chevron-right ms-auto"></i>
 

@@ -75,8 +75,63 @@ footer {
   position: absolute;
   top: 48px;
   left: 0;
-  width: 250px;
+  width: min(250px, calc(100vw - 2rem));
   z-index: 1000;
+  max-height: calc(100vh - 6rem);
+  overflow-y: auto;
+}
+
+header details > summary {
+  list-style: none;
+}
+
+header details > summary::-webkit-details-marker {
+  display: none;
+}
+
+main {
+  min-width: 0;
+}
+
+.admin-main {
+  min-width: 0;
+  width: 100%;
+}
+
+.customers-page,
+.customers-page .card,
+.customers-page .card-body {
+  min-width: 0;
+}
+
+.admin-list-filters {
+  width: min(100%, 420px);
+}
+
+.admin-list-filters > * {
+  min-width: 0;
+}
+
+.admin-list-filters .form-control {
+  flex: 1 1 0;
+}
+
+.admin-list-filters .form-select {
+  flex: 0 1 150px;
+}
+
+.customers-page .table-responsive {
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.customers-page .table {
+  min-width: 760px;
+}
+
+main img,
+main canvas {
+  max-width: 100%;
 }
 
 .mobile-menu .nav-link {
@@ -89,6 +144,7 @@ footer {
   background: #eaf7ef;
   color: #198754;
 }
+
 /* dashboard cards */
 .table th {
   color: #6c757d;

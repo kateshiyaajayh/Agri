@@ -103,7 +103,7 @@ ob_start();
                             </div>
 
 
-                            <div class="address-actions d-flex gap-3 align-self-end align-self-sm-start">
+                            <div class="address-actions d-flex flex-wrap gap-3 align-self-end align-self-sm-start">
 
                                 <a href="#" title="Edit">
                                     <i class="bi bi-pencil"></i>
@@ -158,7 +158,7 @@ ob_start();
                             </div>
 
 
-                            <div class="address-actions d-flex gap-3 align-self-end align-self-sm-start">
+                            <div class="address-actions d-flex flex-wrap gap-3 align-self-end align-self-sm-start">
 
                                 <a href="#" title="Edit">
                                     <i class="bi bi-pencil"></i>

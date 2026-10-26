@@ -91,7 +91,7 @@ ob_start();
                     </h5>
 
 
-                    <div class="detail-product">
+                    <div class="detail-product flex-wrap">
 
                         <div class="detail-product-image">
 
@@ -134,7 +134,7 @@ ob_start();
                     <hr>
 
 
-                    <div class="detail-product">
+                    <div class="detail-product flex-wrap">
 
                         <div class="detail-product-image">
 
@@ -177,7 +177,7 @@ ob_start();
                     <hr>
 
 
-                    <div class="detail-product">
+                    <div class="detail-product flex-wrap">
 
                         <div class="detail-product-image">
 

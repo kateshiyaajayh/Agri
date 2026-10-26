@@ -20,7 +20,7 @@
             <div class="row min-vh-100">
 
                 <!-- Left Section -->
-                <div class="col-12 col-lg-5 login-intro">
+                <div class="col-12 col-lg-5 login-intro d-none d-lg-flex">
                     <div class="login-intro-content px-3 px-sm-4 px-lg-5 py-4 py-lg-5">
 
                         <img src="../images/logo.png"
@@ -69,7 +69,7 @@
                 </div>
 
                 <!-- Login Section -->
-                <div class="col-12 col-lg-7 login-form-section">
+                <div class="col-12 col-lg-7 login-form-section min-vh-100">
                     <div class="login-form-wrapper px-3 px-sm-4 px-lg-5 py-4 py-lg-5">
 
                         <div class="login-heading">
@@ -124,7 +124,7 @@
                             </div>
 
                             <!-- Remember / Forgot -->
-                            <div class="login-options">
+                            <div class="login-options flex-column flex-sm-row align-items-sm-center gap-2">
 
                                 <div class="form-check">
                                     <input

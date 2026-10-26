@@ -9,7 +9,7 @@ ob_start();
 <div class="container-fluid px-3 px-md-4 py-4">
 
     <!-- Welcome -->
-    <div class="dashboard-welcome d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3 mb-4">
+    <div class="dashboard-welcome d-flex flex-column flex-sm-row flex-wrap justify-content-between align-items-start align-items-sm-center gap-3 mb-4">
 
         <div>
 

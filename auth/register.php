@@ -20,7 +20,7 @@
             <div class="row min-vh-100">
 
                 <!-- Left Section -->
-                <div class="col-12 col-lg-5 register-intro">
+                <div class="col-12 col-lg-5 register-intro d-none d-lg-flex">
                     <div class="register-intro-content px-3 px-sm-4 px-lg-5 py-4 py-lg-5">
 
                         <img src="../images/logo.png"
@@ -66,7 +66,7 @@
                 </div>
 
                 <!-- Right Section -->
-                <div class="col-12 col-lg-7 register-form-section">
+                <div class="col-12 col-lg-7 register-form-section min-vh-100">
                     <div class="register-form-wrapper px-3 px-sm-4 px-lg-5 py-4 py-lg-5">
 
                         <div class="form-title">
@@ -280,7 +280,7 @@
                                         Register as
                                     </label>
 
-                                    <div class="role-options">
+                                    <div class="role-options flex-column flex-sm-row">
 
                                         <!-- Customer -->
                                         <label class="role-option">

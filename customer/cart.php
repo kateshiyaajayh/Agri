@@ -88,7 +88,7 @@ ob_start();
                         </div>
 
 
-                        <div class="cart-product-price d-flex flex-row flex-sm-column align-items-center align-items-sm-end justify-content-between gap-2 gap-sm-3">
+                        <div class="cart-product-price d-flex flex-row flex-sm-column align-items-start align-items-sm-end justify-content-between gap-2 gap-sm-3">
 
                             <strong>
                                 ₹120
@@ -150,7 +150,7 @@ ob_start();
                         </div>
 
 
-                        <div class="cart-product-price d-flex flex-row flex-sm-column align-items-center align-items-sm-end justify-content-between gap-2 gap-sm-3">
+                        <div class="cart-product-price d-flex flex-row flex-sm-column align-items-start align-items-sm-end justify-content-between gap-2 gap-sm-3">
 
                             <strong>
                                 ₹80
@@ -212,7 +212,7 @@ ob_start();
                         </div>
 
 
-                        <div class="cart-product-price d-flex flex-row flex-sm-column align-items-center align-items-sm-end justify-content-between gap-2 gap-sm-3">
+                        <div class="cart-product-price d-flex flex-row flex-sm-column align-items-start align-items-sm-end justify-content-between gap-2 gap-sm-3">
 
                             <strong>
                                 ₹320

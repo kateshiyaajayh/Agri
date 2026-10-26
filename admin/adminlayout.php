@@ -123,7 +123,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             <!-- Header -->
             <header class="bg-white border-bottom px-3 px-md-4 py-3">
 
-                <div class="admin-header-inner d-flex flex-wrap align-items-center justify-content-between gap-2">
+                <div class="admin-header-inner d-flex flex-wrap align-items-start align-items-md-center justify-content-between gap-3">
 
                     <div class="d-flex align-items-center gap-3">
 

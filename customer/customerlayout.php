@@ -46,13 +46,14 @@ $currentPage = basename($_SERVER['PHP_SELF']);
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-white border-bottom px-3 px-lg-4">
 
-            <div class="container-fluid">
+            <div class="container-fluid align-items-start align-items-lg-center">
 
                 <!-- Logo -->
                 <a href="market.php" class="navbar-brand">
                     <img src="../images/logo.png"
                         width="150"
-                        alt="SmartDairyPro">
+                        alt="SmartDairyPro"
+                        class="img-fluid">
                 </a>
 
 
@@ -60,17 +61,20 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 <button class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#customerNav">
+                    data-bs-target="#customerNav"
+                    aria-controls="customerNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
 
                     <i class="bi bi-list"></i>
 
                 </button>
 
 
-                <div class="collapse navbar-collapse" id="customerNav">
+                <div class="collapse navbar-collapse pt-2 pt-lg-0" id="customerNav">
 
                     <!-- Main Menu -->
-                    <ul class="navbar-nav mx-auto gap-lg-2">
+                    <ul class="navbar-nav mx-auto gap-lg-2 mb-2 mb-lg-0">
 
                         <li class="nav-item">
 
@@ -100,7 +104,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
 
                     <!-- Profile -->
-                    <div class="dropdown" id="profileDropdown">
+                    <div class="dropdown mb-1 mb-lg-0" id="profileDropdown">
 
                         <button class="btn profile-btn dropdown-toggle"
                             type="button"
@@ -243,9 +247,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
                     </div>
 
-                    <div class="d-flex gap-2 d-none" id="guestActions">
-                        <a href="../auth/login.php" class="btn btn-outline-success btn-sm">Login</a>
-                        <a href="../auth/register.php" class="btn btn-success btn-sm">Register</a>
+                    <div class="d-grid d-sm-flex gap-2 d-none align-self-stretch align-self-lg-auto mb-1 mb-lg-0" id="guestActions">
+                        <a href="../auth/login.php" class="btn btn-outline-success btn-sm flex-fill flex-lg-grow-0 text-center">Login</a>
+                        <a href="../auth/register.php" class="btn btn-success btn-sm flex-fill flex-lg-grow-0 text-center">Register</a>
                     </div>
 
                 </div>

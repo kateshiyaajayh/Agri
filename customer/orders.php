@@ -115,7 +115,7 @@ ob_start();
                 <hr>
 
 
-                <div class="order-content d-flex flex-column flex-md-row align-items-stretch align-items-md-center justify-content-between gap-3 gap-md-4">
+                <div class="order-content d-flex flex-column flex-md-row flex-wrap align-items-stretch align-items-md-center justify-content-between gap-3 gap-md-4">
 
                     <div class="order-products flex-grow-1">
 

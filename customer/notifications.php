@@ -34,7 +34,7 @@ ob_start();
         <div class="card-body p-4">
 
             <!-- New Notification -->
-            <div class="notification-item unread">
+            <div class="notification-item d-flex flex-wrap unread">
 
                 <div class="notification-icon order-icon">
                     <i class="bi bi-check-circle"></i>
@@ -70,7 +70,7 @@ ob_start();
 
 
             <!-- New Notification -->
-            <div class="notification-item unread">
+            <div class="notification-item d-flex flex-wrap unread">
 
                 <div class="notification-icon delivery-icon">
                     <i class="bi bi-truck"></i>
@@ -106,7 +106,7 @@ ob_start();
 
 
             <!-- New Notification -->
-            <div class="notification-item unread">
+            <div class="notification-item d-flex flex-wrap unread">
 
                 <div class="notification-icon offer-icon">
                     <i class="bi bi-tag"></i>
@@ -142,7 +142,7 @@ ob_start();
 
 
             <!-- Old Notification -->
-            <div class="notification-item">
+            <div class="notification-item d-flex flex-wrap">
 
                 <div class="notification-icon delivered-icon">
                     <i class="bi bi-box-seam"></i>
@@ -168,7 +168,7 @@ ob_start();
 
 
             <!-- Old Notification -->
-            <div class="notification-item">
+            <div class="notification-item d-flex flex-wrap">
 
                 <div class="notification-icon payment-icon">
                     <i class="bi bi-credit-card"></i>
@@ -194,7 +194,7 @@ ob_start();
 
 
             <!-- Old Notification -->
-            <div class="notification-item">
+            <div class="notification-item d-flex flex-wrap">
 
                 <div class="notification-icon account-icon">
                     <i class="bi bi-person-check"></i>
